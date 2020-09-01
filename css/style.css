@@ -1,0 +1,762 @@
+@font-face {
+  font-family: "Bernadette";
+  src: url(../font/bernadette.ttf);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+/* ============== Common CSS Start ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333332;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bernadette";
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 28px;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #040404;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.btn,
+.btn-white {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, right top, left top, from(#d77f40), color-stop(#465396), to(#d77f40));
+  background-image: linear-gradient(to left, #d77f40, #465396, #d77f40);
+  background-size: 200%;
+}
+
+.btn:hover {
+  background-position: right;
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  color: #040404;
+  font-weight: 600;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.btn-white:hover {
+  background-image: linear-gradient(140deg, #d77f40, #465396);
+  font-weight: 400;
+}
+
+i:focus,
+.btn:focus,
+.btn-white:focus,
+input:focus,
+a:focus,
+button {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 9999;
+  border: none;
+  background: transparent;
+}
+
+.up i {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-image: linear-gradient(140deg, #d77f40, #465396, #d77f40);
+  background-size: 200%;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.up i:hover {
+  background-position: right;
+}
+
+/* ============== Common CSS End ============== */
+/* ============== Header Start ============== */
+header {
+  background: url("../img/banner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-clip-path: ellipse(100% 100% at 50% 0%);
+          clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+header nav .navbar-toggler i {
+  color: #fff;
+}
+
+header nav .navbar-toggler:focus {
+  outline: none;
+}
+
+header nav #menu ul .nav-item {
+  padding-left: 20px;
+}
+
+header nav #menu ul .nav-item .nav-link {
+  color: #fff;
+}
+
+header .banner .banner-content {
+  padding-top: 20%;
+}
+
+header .banner .banner-content h1 {
+  font-size: 80px;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+header .banner .banner-content h2 {
+  font-family: "Lato";
+  font-size: 25px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+header .banner .banner-content p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(70, 83, 150, 0.7)), to(rgba(215, 127, 64, 0.7)));
+  background: linear-gradient(to left, rgba(70, 83, 150, 0.7), rgba(215, 127, 64, 0.7));
+  z-index: -1;
+}
+
+/* ============== Header End ============== */
+/* ============== Feature Start ============== */
+#feature {
+  margin-top: -120px;
+}
+
+#feature .feature-item {
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0px 3px 9px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 9px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-bottom: 50px;
+  margin-bottom: 45px;
+  z-index: 10;
+}
+
+#feature .feature-item img {
+  margin-bottom: 13px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#feature .feature-item h4 {
+  font-size: 25px;
+  color: #333332;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#feature .feature-item p {
+  color: #040404;
+  font-weight: 300;
+  padding: 0 30px;
+}
+
+#feature .feature-item .btn {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* ============== Feature End ============== */
+/* ============== About Start ============== */
+#about {
+  padding: 90px 0 150px;
+}
+
+#about .about-left p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+#about .about-middle {
+  height: 100%;
+  position: relative;
+}
+
+#about .about-middle h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 100vh;
+  font-weight: 900;
+  background-image: url(../img/about.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: center center;
+}
+
+#about .about-right {
+  position: relative;
+}
+
+#about .about-right p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+#about .about-right h3 {
+  font-size: 30px;
+}
+
+#about .about-right::before {
+  content: '"';
+  position: absolute;
+  top: -40px;
+  left: -100px;
+  font-family: "Bernadette";
+  font-size: 200px;
+  line-height: 1;
+}
+
+/* ============== About End ============== */
+/* ============== Gallery Start ============== */
+#gallery {
+  position: relative;
+}
+
+#gallery img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#gallery .gallery-text {
+  width: 728px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#gallery .gallery-text h3 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+#gallery .gallery-text p {
+  margin-bottom: 40px;
+}
+
+/* ============== Gallery End ============== */
+/* ============== Service Start ============== */
+#service {
+  margin: 90px 0;
+  background: #f4f4f4;
+}
+
+#service .service-text p {
+  margin-bottom: 20px;
+}
+
+#service .service-image {
+  background: url(../img/service.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+#service .service-image .service-icon {
+  background: linear-gradient(140deg, #d77f40, #465396);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px 30px;
+  margin-left: -25%;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  width: 60%;
+  height: 474px;
+}
+
+#service .service-image .service-icon .service-single-icon {
+  width: 50%;
+  padding: 30px 20px 20px;
+}
+
+#service .service-image .service-icon .service-single-icon i {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#service .service-image .service-icon .service-single-icon p {
+  font-size: 15px;
+  color: #fff;
+}
+
+#service .service-image .service-icon .service-single-icon:nth-child(1),
+#service .service-image .service-icon .service-single-icon:nth-child(3),
+#service .service-image .service-icon .service-single-icon:nth-child(5) {
+  border-right: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+#service .service-image .service-icon .service-single-icon:nth-child(3),
+#service .service-image .service-icon .service-single-icon:nth-child(4) {
+  border-top: 1px dotted rgba(255, 255, 255, 0.5);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+/* ============== Service End ============== */
+/* ============== Team Start ============== */
+#team {
+  margin: 90px 0;
+}
+
+#team .team-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#team .member img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 7px;
+  margin-bottom: 35px;
+}
+
+#team .member h5 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#team .member p {
+  color: #a3a3a3;
+  font-weight: 300;
+}
+
+/* ============== Team End ============== */
+/* ============== Anita Start ============== */
+#anita .anita-left {
+  padding-top: 20px;
+}
+
+#anita .anita-left .anita-intro {
+  margin-bottom: 40px;
+}
+
+#anita .anita-left .anita-intro h2 {
+  margin-bottom: 0;
+}
+
+#anita .anita-left .anita-intro h6 {
+  margin-bottom: 20px;
+  color: #505050;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#anita .anita-left .anita-intro p {
+  font-weight: 300;
+}
+
+#anita .anita-left .progress-bar-container .single-progressbar .title {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+#anita .anita-left .progress-bar-container .single-progressbar .progressbar {
+  background: #dadada !important;
+  border-radius: 6px !important;
+}
+
+#anita .anita-left .progress-bar-container .single-progressbar .progressbar .proggress {
+  border-radius: 6px !important;
+  height: 10px !important;
+  background: -webkit-gradient(linear, left top, right top, from(#d77f40), to(#465396));
+  background: linear-gradient(to right, #d77f40, #465396);
+}
+
+#anita .anita-left .progress-bar-container .single-progressbar .progressbar .percentCount {
+  margin-top: -40px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #040404;
+}
+
+#anita .anita-right {
+  height: 100%;
+}
+
+#anita .anita-right .row {
+  height: 100%;
+}
+
+#anita .anita-right .anita-image {
+  height: 100%;
+}
+
+#anita .anita-right .anita-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#anita .anita-right .anita-social {
+  background: linear-gradient(140deg, #d77f40, #465396);
+  height: 100%;
+  padding: 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#anita .anita-right .anita-social p {
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  word-spacing: 8px;
+}
+
+#anita .anita-right .anita-social .social-links {
+  width: 100%;
+}
+
+#anita .anita-right .anita-social .social-links a i {
+  color: #272525;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* ============== Anita End ============== */
+/* ============== Price Start ============== */
+#price {
+  margin: 120px 0;
+  background: #f4f4f4;
+}
+
+#price .professional-container {
+  background: linear-gradient(240deg, #d77f40, #465396);
+  padding: 50px 0 50px 100px;
+}
+
+#price .professional-container .professional {
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+}
+
+#price .professional-container .professional h3 {
+  font-size: 35px;
+  margin-bottom: 7px;
+}
+
+#price .professional-container .professional h6 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#price .professional-container .professional .value {
+  font-size: 80px;
+  font-family: "Lato";
+  background: linear-gradient(140deg, #d77f40, #465396);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#price .professional-container .professional .value .fraction {
+  font-size: 40px;
+}
+
+#price .professional-container .professional h5 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#price .professional-container .professional p {
+  font-weight: 300;
+}
+
+#price .best-container {
+  padding: 50px 20px 50px 0;
+}
+
+#price .best-container .best {
+  background: linear-gradient(140deg, #d77f40, #465396);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#price .best-container .best h4 {
+  font-size: 50px;
+  color: #fff;
+}
+
+#price .best-container .best p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#price .best-container .best ul {
+  margin-bottom: 57px;
+}
+
+#price .best-container .best ul li {
+  margin-bottom: 15px;
+}
+
+#price .price-intro {
+  padding-left: 50px;
+}
+
+#price .price-intro .bold {
+  margin-bottom: 25px;
+}
+
+/* ============== Price Start ============== */
+/* ============== Get Start ============== */
+#get {
+  text-align: center;
+  background: url(../img/get.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0;
+  position: relative;
+  z-index: 19;
+}
+
+#get .get-content h2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#get .get-content ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#get .get-content ul li a i {
+  color: #fff;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#get .get-content ul li a i::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(140deg, #d77f40, #465396);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+#get .get-content ul li a i:hover::after {
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#get::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(70, 83, 150, 0.7)), to(rgba(215, 127, 64, 0.7)));
+  background: linear-gradient(to left, rgba(70, 83, 150, 0.7), rgba(215, 127, 64, 0.7));
+  z-index: -1;
+}
+
+/* ============== Get End ============== */
+/* ============== Contact Start ============== */
+#contact {
+  margin: 60px 0;
+}
+
+#contact .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .contact-item .contact-icon i {
+  font-size: 50px;
+  color: #d77f40;
+}
+
+#contact .contact-item .contact-text {
+  padding-left: 30px;
+}
+
+#contact .contact-item .contact-text h5 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#contact .contact-item .contact-text a {
+  color: #040404;
+}
+
+#contact .contact-item .contact-text p {
+  font-size: 16px;
+}
+
+/* ============== Contact End ============== */
+/* ============== Footer Start ============== */
+footer {
+  background: #dadada;
+  padding: 15px 0;
+}
+
+footer .sazzat {
+  text-align: right;
+}
+
+footer .sazzat a {
+  text-transform: uppercase;
+}
+
+footer .sazzat a:hover {
+  color: #d77f40;
+}
+
+/* ============== Footer End ============== */
+/*# sourceMappingURL=style.css.map */
